@@ -5,7 +5,10 @@ export default function Navbar() {
     <div>
       <header className="text-gray-600 body-font shadow-lg p-3 mb-5 bg-body rounded">
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <a href="/" className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+          <a
+            href="/"
+            className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -20,19 +23,22 @@ export default function Navbar() {
             </svg>
             <span className="ml-3 text-xl">หลักสูตรภาษาอังกฤษ</span>
           </a>
-          <nav
-            
-            className="md:ml-auto flex flex-wrap items-center text-base justify-center"
-          >
+          <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
             <a className="mr-5 hover:text-gray-900" href="/">
               หน้าหลัก
             </a>
             <a className="mr-5 hover:text-gray-900" href="/about">
               เกี่ยวกับ
             </a>
-            <a className="mr-5 hover:text-gray-900">Ai ตรวจวินิจฉัยโรค</a>
-            <a className="mr-5 hover:text-gray-900">ChatGPT</a>
-            <a className="mr-5 hover:text-gray-900">ติดต่อ</a>
+            <a className="mr-5 hover:text-gray-900" href="/ai">
+              Ai ตรวจวินิจฉัยโรค
+            </a>
+            <a className="mr-5 hover:text-gray-900" href="/chatgpt">
+              ChatGPT
+            </a>
+            <a className="mr-5 hover:text-gray-900" href="/contact">
+              ติดต่อ
+            </a>
           </nav>
           <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
             LogIn
@@ -45,5 +51,3 @@ export default function Navbar() {
     </div>
   );
 }
-
-git config --global user.email im.wanrada.2548@gmail.com
